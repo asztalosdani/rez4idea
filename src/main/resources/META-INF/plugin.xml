@@ -9,7 +9,8 @@
     <depends optional="true">PythonCore</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <configurationType implementation="hu.asztalosdani.rezplugin.run.configuration.RezEnvConfigurationType" />
+        <configurationType implementation="hu.asztalosdani.rezplugin.run.configuration.RezEnvConfigurationType"/>
+        <projectViewNodeDecorator implementation="hu.asztalosdani.rezplugin.projectView.RezPackageDecorator"/>
         <toolWindow id="Rez packages" secondary="false" anchor="right"
                     factoryClass="hu.asztalosdani.rezplugin.toolwindow.PackagesToolWindowFactory"/>
     </extensions>
