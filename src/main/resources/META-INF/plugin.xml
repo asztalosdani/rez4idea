@@ -11,12 +11,12 @@
     <extensions defaultExtensionNs="com.intellij">
         <configurationType implementation="hu.asztalosdani.rezplugin.run.configuration.RezEnvConfigurationType"/>
         <projectViewNodeDecorator implementation="hu.asztalosdani.rezplugin.projectView.RezPackageDecorator"/>
-        <toolWindow id="Rez packages" secondary="false" anchor="right"
+        <toolWindow id="Rez packages" secondary="false" anchor="right" icon="/icons/packageFolder.png"
                     factoryClass="hu.asztalosdani.rezplugin.toolwindow.PackagesToolWindowFactory"/>
     </extensions>
 
     <actions>
-        <action id="Rez.New" class="hu.asztalosdani.rezplugin.actions.NewDefinitionFileAction"
+        <action id="Rez.New" class="hu.asztalosdani.rezplugin.actions.NewDefinitionFileAction" icon="/icons/packageFile.png"
                 text="Rez Package Definition File" description="Create new package.py">
             <add-to-group group-id="NewGroup" anchor="last"/>
         </action>
