@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>hu.asztalosdani</id>
-    <name>Hello Action Project</name>
+    <name>Rez4Idea</name>
     <version>0.0.1</version>
     <vendor email="dummy" url="dummy">dummy</vendor>
 
@@ -16,10 +16,6 @@
     </extensions>
 
     <actions>
-        <group id="MyPlugin.SampleMenu" text="Greeting" description="Greeting menu">
-            <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="Myplugin.Textboxes" class="HelloAction" text="Hello" description="Says hello"/>
-        </group>
         <action id="Rez.New" class="hu.asztalosdani.rezplugin.actions.NewDefinitionFileAction"
                 text="Rez Package Definition File" description="Create new package.py">
             <add-to-group group-id="NewGroup" anchor="last"/>
